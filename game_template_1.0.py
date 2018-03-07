@@ -95,11 +95,12 @@ class Grid_Ref(tk.Tk):
         self.grid_list[1][1] = 20
         self.grid_list[28][28] = 20
         self.grid_list[1][28] = 20
-        self.grid_list[10][2] = 777
+        self.grid_list[11][1] = 40
         self.grid_list[10][1] = 777
         self.move_npc()
         self.move_opponent_1()
-    def write_second_instance(self):  
+    def write_second_instance(self):
+        self.tk_frame.delete(tk.ALL)
         self.instance = 1
         self.grid_list = []
         for row in range(self.board_size): 
@@ -127,6 +128,8 @@ class Grid_Ref(tk.Tk):
         if self.grid_list[self.player_row_pos + dist_row][self.player_col_pos + dist_col] == 1000:
             self.grid_list[self.player_row_pos][self.player_col_pos] = 88
             self.write_first_instance()
+            self.player_row_pos = 10
+            self.player_col_pos = 2
             self.move_player(0,0)
             self.render_frame()
     def move_npc(self):
