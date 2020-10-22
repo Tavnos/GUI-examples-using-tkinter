@@ -1,6 +1,9 @@
 # GUI-examples-using-tkinter
 Commented series of possible ways setting up a graphical user interface with tkinter 
 
+
+Mostly inspired by https://www.w3resource.com/python-exercises/
+And made completely public by the GNU public licence. 
 The tutorial is about calculating the volume of a sphere from a given radius.
 Along with the A-Z implementation and refinement of a graphical user interface
 around it, made with the awesomely built in, tkinter + numpy packages.
